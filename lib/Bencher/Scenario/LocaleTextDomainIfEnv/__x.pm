@@ -18,8 +18,10 @@ our $scenario = {
     },
 
     participants => [
-        {code_template=>'package P1; use Locale::TextDomain;        __x("{foo} {bar}", foo=>1) for 1..1000'},
-        {code_template=>'package P2; use Locale::TextDomain::IfEnv; __x("{foo} {bar}", foo=>1) for 1..1000'},
+        {code_template=>'package P1; use Locale::TextDomain;              __x("{foo} {bar}", foo=>1) for 1..1000'},
+        {code_template=>'package P2; use Locale::TextDomain::IfEnv;       __x("{foo} {bar}", foo=>1) for 1..1000'},
+        {code_template=>'package P1; use Locale::TextDomain::UTF8;        __x("{foo} {bar}", foo=>1) for 1..1000'},
+        {code_template=>'package P2; use Locale::TextDomain::UTF8::IfEnv; __x("{foo} {bar}", foo=>1) for 1..1000'},
     ],
 };
 

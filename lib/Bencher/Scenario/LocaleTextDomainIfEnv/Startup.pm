@@ -21,6 +21,8 @@ our $scenario = {
 
     participants => [
         {module=>'Locale::TextDomain::IfEnv'},
+        {module=>'Locale::TextDomain::UTF8::IfEnv'},
+        {module=>'Locale::TextDomain::UTF8'},
         {module=>'Locale::TextDomain'},
 
         {module=>'Locale::Messages'},
