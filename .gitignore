@@ -1,0 +1,4 @@
+Bencher-Scenario-LocaleTextDomainIfEnv-*
+.build
+*~
+nytprof*
